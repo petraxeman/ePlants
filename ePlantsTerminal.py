@@ -3,7 +3,7 @@ from settings import *
 
 class Plant:
     def __init__(self, cords, code=None):
-        self.root_cords
+        self.root_cords = vec2(cords[0])
         self.cells = [(0, 0, self, vec2(0, 0))]
         self.gen = Genom(code)
     def growth(self, area):
